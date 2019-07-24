@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Programmierung:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Programmierung_jar</output-path>
+    <root id="archive" name="Programmierung_jar.jar">
+      <element id="module-output" name="Programmierung" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jackson-annotations-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/graphhopper-web-0.11.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jackson-core-2.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jackson-databind-2.9.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/mapjfx-1.24.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="aPane" prefHeight="50.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblStartZeit" layoutX="14.0" layoutY="6.0" text="00:00" />
+      <Label fx:id="lblZielZeit" layoutX="51.0" layoutY="6.0" text="00:00" />
+      <Label fx:id="lblDauerText" layoutX="101.0" layoutY="6.0" text="Dauer:" />
+      <Label fx:id="lblDauer" layoutX="139.0" layoutY="6.0" text="00:00" />
+      <Label fx:id="lblUmstiege" layoutX="14.0" layoutY="28.0" text="Umstiege" />
+      <Label fx:id="lblDirekt" layoutX="101.0" layoutY="28.0" text="direkt?" visible="false" />
+      <Label fx:id="lblVBX" layoutX="320.0" layoutY="6.0" prefHeight="17.0" prefWidth="166.0" text="Verbindung X" textAlignment="RIGHT" />
+   </children>
+</AnchorPane>

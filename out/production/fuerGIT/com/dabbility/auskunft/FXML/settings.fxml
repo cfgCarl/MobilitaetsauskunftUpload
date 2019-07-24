@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dabbility.auskunft.Controller.settings">
+   <center>
+      <AnchorPane prefHeight="132.0" prefWidth="300.0">
+         <children>
+            <VBox prefHeight="193.0" prefWidth="300.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="300.0" text="Einstellungen" textAlignment="CENTER" />
+                  <HBox prefHeight="138.0" prefWidth="300.0">
+                     <children>
+                        <VBox prefHeight="64.0" prefWidth="100.0">
+                           <children>
+                              <Label prefHeight="28.0" prefWidth="300.0" text="Routing" textAlignment="CENTER" />
+                              <CheckBox fx:id="cbxIVOEV" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" selected="true" text="IV -&gt; ÖV" />
+                        
+                              <CheckBox fx:id="cbxOEVIV" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" selected="true" text="ÖV -&gt; IV" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="76.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox fx:id="cbxNextbike" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" selected="true" text="nextbike" />
+                              <CheckBox fx:id="cbxsMobil" disable="true" mnemonicParsing="false" prefHeight="17.0" prefWidth="200.0" selected="true" text="stadtmobil (Coming Soon)" />
+                              <CheckBox fx:id="cbxEBike" mnemonicParsing="false" onAction="#ebikeAction" prefHeight="25.0" prefWidth="140.0" text="eigenes Fahrrad" />
+                              <TextField fx:id="tvEBike" disable="true" promptText="Fahrrad Adresse" />
+                              <Button fx:id="btnValid" disable="true" mnemonicParsing="false" onAction="#adresseValidieren" prefHeight="25.0" prefWidth="207.0" text="Adresse Validieren" textAlignment="CENTER" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Button mnemonicParsing="false" onAction="#submit" prefHeight="41.0" prefWidth="300.0" text="Übernehmen" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </center>
+   <left>
+   </left>
+   <left>
+      <Pane prefHeight="200.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <Pane prefHeight="200.0" prefWidth="10.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
